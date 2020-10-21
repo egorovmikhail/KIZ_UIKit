@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		8112E0612540BC5300E6114A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8112E0602540BC5300E6114A /* AppDelegate.swift */; };
 		8112E0632540BC5300E6114A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8112E0622540BC5300E6114A /* SceneDelegate.swift */; };
-		8112E0652540BC5300E6114A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8112E0642540BC5300E6114A /* ViewController.swift */; };
+		8112E0652540BC5300E6114A /* ApplicationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8112E0642540BC5300E6114A /* ApplicationsVC.swift */; };
 		8112E06A2540BC5300E6114A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8112E0692540BC5300E6114A /* Assets.xcassets */; };
 		8112E06D2540BC5300E6114A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8112E06B2540BC5300E6114A /* LaunchScreen.storyboard */; };
+		8148CCCD2540CC1B00F4721A /* PositionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8148CCCC2540CC1B00F4721A /* PositionsVC.swift */; };
 		818E9F342540C2F2001EDCD3 /* Respons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818E9F332540C2F2001EDCD3 /* Respons.swift */; };
 		9650C40A89000B3A83674060 /* Pods_KIZ_UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72FE11EE9CCBCA529EA17C8B /* Pods_KIZ_UIKit.framework */; };
 /* End PBXBuildFile section */
@@ -22,10 +23,11 @@
 		8112E05D2540BC5300E6114A /* KIZ_UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIZ_UIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8112E0602540BC5300E6114A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8112E0622540BC5300E6114A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8112E0642540BC5300E6114A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8112E0642540BC5300E6114A /* ApplicationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationsVC.swift; sourceTree = "<group>"; };
 		8112E0692540BC5300E6114A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8112E06C2540BC5300E6114A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8112E06E2540BC5300E6114A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8148CCCC2540CC1B00F4721A /* PositionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionsVC.swift; sourceTree = "<group>"; };
 		818E9F332540C2F2001EDCD3 /* Respons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Respons.swift; sourceTree = "<group>"; };
 		9355E2BD7C6513E405A525E7 /* Pods-KIZ_UIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIZ_UIKit.release.xcconfig"; path = "Target Support Files/Pods-KIZ_UIKit/Pods-KIZ_UIKit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,7 +103,8 @@
 		818E9F362540C36C001EDCD3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8112E0642540BC5300E6114A /* ViewController.swift */,
+				8112E0642540BC5300E6114A /* ApplicationsVC.swift */,
+				8148CCCC2540CC1B00F4721A /* PositionsVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -228,7 +231,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8112E0652540BC5300E6114A /* ViewController.swift in Sources */,
+				8112E0652540BC5300E6114A /* ApplicationsVC.swift in Sources */,
+				8148CCCD2540CC1B00F4721A /* PositionsVC.swift in Sources */,
 				8112E0612540BC5300E6114A /* AppDelegate.swift in Sources */,
 				818E9F342540C2F2001EDCD3 /* Respons.swift in Sources */,
 				8112E0632540BC5300E6114A /* SceneDelegate.swift in Sources */,

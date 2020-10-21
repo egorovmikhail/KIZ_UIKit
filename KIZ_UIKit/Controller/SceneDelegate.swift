@@ -11,14 +11,40 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
   var window: UIWindow?
 
-
   func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
     
     guard let windowScene = (scene as? UIWindowScene) else { return }
+    let applicationsNC = UINavigationController(rootViewController: ApplicationsVC())
+    let positionsNC = UINavigationController(rootViewController: PositionsVC())
+    
+    let tabbar = UITabBarController()
+    tabbar.viewControllers = [applicationsNC, positionsNC]
+       
     window = UIWindow(frame: windowScene.coordinateSpace.bounds)
     window?.windowScene = windowScene
-    window?.rootViewController = ViewController()
+    window?.rootViewController = createTabbar()
     window?.makeKeyAndVisible()
+  }
+  
+  func createApplications() -> UINavigationController {
+    let applicationsVC = ApplicationsVC()
+    applicationsVC.title = "Заявки"
+    applicationsVC.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 0)
+    return UINavigationController(rootViewController: applicationsVC)
+  }
+  
+  func createPositions() -> UINavigationController {
+    let positionsVC = PositionsVC()
+    positionsVC.title = "Позиции"
+    positionsVC.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 1)
+    return UINavigationController(rootViewController: positionsVC)
+  }
+  
+  func createTabbar() -> UITabBarController {
+    let tabbar = UITabBarController()
+    UITabBar.appearance().tintColor = .systemGray
+    tabbar.viewControllers = [createApplications(), createPositions()]
+    return tabbar
   }
 
   func sceneDidDisconnect(_ scene: UIScene) {
