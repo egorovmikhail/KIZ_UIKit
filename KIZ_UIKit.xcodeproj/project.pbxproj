@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		8112E0652540BC5300E6114A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8112E0642540BC5300E6114A /* ViewController.swift */; };
 		8112E06A2540BC5300E6114A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8112E0692540BC5300E6114A /* Assets.xcassets */; };
 		8112E06D2540BC5300E6114A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8112E06B2540BC5300E6114A /* LaunchScreen.storyboard */; };
+		818E9F342540C2F2001EDCD3 /* Respons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818E9F332540C2F2001EDCD3 /* Respons.swift */; };
 		9650C40A89000B3A83674060 /* Pods_KIZ_UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72FE11EE9CCBCA529EA17C8B /* Pods_KIZ_UIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		8112E0692540BC5300E6114A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8112E06C2540BC5300E6114A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8112E06E2540BC5300E6114A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		818E9F332540C2F2001EDCD3 /* Respons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Respons.swift; sourceTree = "<group>"; };
 		9355E2BD7C6513E405A525E7 /* Pods-KIZ_UIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIZ_UIKit.release.xcconfig"; path = "Target Support Files/Pods-KIZ_UIKit/Pods-KIZ_UIKit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,7 +48,6 @@
 				6358B6C876ACE83049B4D644 /* Pods-KIZ_UIKit.debug.xcconfig */,
 				9355E2BD7C6513E405A525E7 /* Pods-KIZ_UIKit.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,6 +80,7 @@
 		8112E05F2540BC5300E6114A /* KIZ_UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				818E9F322540C2C8001EDCD3 /* Model */,
 				8112E0602540BC5300E6114A /* AppDelegate.swift */,
 				8112E0622540BC5300E6114A /* SceneDelegate.swift */,
 				8112E0642540BC5300E6114A /* ViewController.swift */,
@@ -87,6 +89,14 @@
 				8112E06E2540BC5300E6114A /* Info.plist */,
 			);
 			path = KIZ_UIKit;
+			sourceTree = "<group>";
+		};
+		818E9F322540C2C8001EDCD3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				818E9F332540C2F2001EDCD3 /* Respons.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +214,7 @@
 			files = (
 				8112E0652540BC5300E6114A /* ViewController.swift in Sources */,
 				8112E0612540BC5300E6114A /* AppDelegate.swift in Sources */,
+				818E9F342540C2F2001EDCD3 /* Respons.swift in Sources */,
 				8112E0632540BC5300E6114A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
